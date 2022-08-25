@@ -59,7 +59,7 @@ pypi:
 # ----------------------------------
 
 streamlit:
-	-@streamlit run project_zero/app.py
+	-@streamlit run app.py
 
 heroku_upload_public_key:
 	-@heroku keys:add ~/.ssh/id_ed25519.pub
