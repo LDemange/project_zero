@@ -12,7 +12,7 @@ st.write('')
 st.write('')
 st.write('')
 
-a=3
+a=4
 b=5
 
 c = calc_sum(a,b)
