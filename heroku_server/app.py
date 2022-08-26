@@ -1,6 +1,9 @@
 import streamlit as st
 from project_zero.processing import calc_sum
 
+with st.sidebar:
+    st.write('ca marche')
+
 #Documentation 
 
 #Main title
@@ -11,6 +14,8 @@ st.write('')
 st.write('')
 st.write('')
 st.write('')
+
+
 
 a = st.number_input('number a', min_value=None, max_value=None, value=0.0, step=None,
                 format=None)
