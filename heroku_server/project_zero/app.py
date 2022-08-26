@@ -1,7 +1,7 @@
 import streamlit as st
 from project_zero.processing import calc_sum
 
-#Documentation 
+#Documentation
 
 #Main title
 st.markdown(f"<h1 style='text-align: center; color: black; font: Roboto'> Test API</h1>", unsafe_allow_html=True)
@@ -12,10 +12,8 @@ st.write('')
 st.write('')
 st.write('')
 
-a = st.number_input('number a', min_value=None, max_value=None, value=0.0, step=None,
-                format=None)
-b = st.number_input('number b', min_value=None, max_value=None, value=0.0, step=None,
-                format=None)
+a=3
+b=5
 
 c = calc_sum(a,b)
 
