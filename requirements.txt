@@ -28,3 +28,13 @@ six>=1.14
 joblib
 memoized-property
 termcolor
+
+# API DOCKER
+fastapi         # API framework
+pytz            # Timezones management
+uvicorn         # Web server
+
+# tests,API DOCKER
+httpx           # HTTP client
+pytest-asyncio  # Asynchronous I/O support for pytest
+
