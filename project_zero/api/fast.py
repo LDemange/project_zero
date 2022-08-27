@@ -22,8 +22,8 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-# http://127.0.0.1:8000/send?word1=bon&word2=jour
-
+# http://0.0.0.0:8000/send?word1=bon&word2=jour #en local avec la commande docker run -e PORT=8000 -p 8000:8000 --env-file .env $IMAGE
+# https://project-zero-service-cis7jmkfja-ew.a.run.app/send?word1=bon&word2=jour # sur GCR
 
 # $IMPLODE_BEGIN
 @app.get("/send")
@@ -31,6 +31,7 @@ def send(word1: str, word2: str):
     return word1+'_'+word2
 # $IMPLODE_END
 
+# http://0.0.0.0:8000 #en local avec la commande docker run -e PORT=8000 -p 8000:8000 --env-file .env $IMAGE
 
 @app.get("/")
 def root():
